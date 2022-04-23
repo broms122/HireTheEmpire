@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    
+	
+	<VFECore.Misc.HireableFactionDef>
+        <defName>Empire</defName>
+        <label>shattered empire</label>
+        <description>An ultratech refugee society from the planet Sophiamunda. Their culture is based on a code of honor, a strict class system, and enforced social stasis.\n\nThese are the survivors of a great calamity that tore apart Sophian society. They fled to the rimworld using the remnants of their fleet. Despite losing so much, their ships and technology still make them powerful.\n\nThey will refuse to trade with anyone who lacks the appropriate royal title.</description>
+        <texPath>World/WorldObjects/Expanding/Empire</texPath>
+        <color>(0.85, 0.85, 0.75)</color>
+        <pawnKinds>
+            <li>Empire_Common_Laborer</li>
+            <li>Empire_Royal_NobleWimp</li>
+            <li>Empire_Fighter_Cataphract</li>
+        </pawnKinds>
+        <commTag>workers</commTag>
+        <referencedFaction>Empire</referencedFaction>
+    </VFECore.Misc.HireableFactionDef>
+</Defs>

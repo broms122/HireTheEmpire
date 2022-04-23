@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Patch>
+		<Operation Class="VFECore.PatchOperationToggableSequence">
+			<enabled>False</enabled>
+			<mods>
+			<li>Royalty</li>
+			</mods>
+			<label>Hire the Empire: Add Cheap Labor</label>
+			<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+					<value>  
+                            <PawnKindDef ParentName="EmpireCommonerBase">
+                            <defName>Empire_Common_Laborer_Cheap</defName>
+                            <label>low class laborer</label>
+                            <race>Human</race>
+                            <defaultFactionType>Empire</defaultFactionType>
+                            <maxGenerationAge>50</maxGenerationAge>
+                            <combatPower>5</combatPower>
+                            <backstoryFiltersOverride>
+                            <li>
+                                <categories>
+                                <li>ImperialCommon</li>
+                                </categories>
+                            </li>
+                            </backstoryFiltersOverride>
+                            <styleItemTags>
+                            <li>
+                                <tag>Soldier</tag>
+                                <baseWeight>1</baseWeight>
+                                <weightFactor>1</weightFactor>
+                            </li>
+                            </styleItemTags>
+                            <baseRecruitDifficulty>0.30</baseRecruitDifficulty>
+                            <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+                            <forceNormalGearQuality>true</forceNormalGearQuality>
+                            <isFighter>false</isFighter>
+                            <requiredWorkTags> <!-- Must be capable of labor, as this pawn kind is used in laborer quests. -->
+                            <li>ManualDumb</li>
+                            <li>ManualSkilled</li>
+                            <li>Cleaning</li>
+                            <li>Hauling</li>
+                            <li>Mining</li>
+                            <li>Firefighting</li>
+                            </requiredWorkTags>
+                            <apparelTags>
+                            <li>IndustrialBasic</li>
+                            </apparelTags>
+                            <apparelMoney>200~1000</apparelMoney>
+                            <gearHealthRange>1~1</gearHealthRange>
+                            <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+                            <techHediffsMoney>50~800</techHediffsMoney>
+                            <techHediffsTags>
+                            <li>Poor</li>
+                            <li>Simple</li>
+                            </techHediffsTags>
+                            <techHediffsChance>0.08</techHediffsChance>
+                            <apparelDisallowTags>
+                            <li>Western</li>
+                            </apparelDisallowTags>
+                            <disallowedTraits>
+                            <li>Nudist</li>
+                            </disallowedTraits>
+                            <initialWillRange>1~3</initialWillRange>
+                            <initialResistanceRange>6~10</initialResistanceRange>
+                            <skills>
+                                <li>
+                                    <skill>Plants</skill>
+                                    <range>3~4</range>
+                                </li>
+                                <li>
+                                    <skill>Mining</skill>
+                                    <range>1~3</range>
+                                </li>
+                                <li>
+                                    <skill>Construction</skill>
+                                    <range>2~3</range>
+                                </li>
+                                <li>
+                                    <skill>Animals</skill>
+                                    <range>1~2</range>
+                                </li>
+                            </skills>
+                        </PawnKindDef>
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/VFECore.Misc.HireableFactionDef[defName="Empire"]/pawnKinds</xpath>
+					<value>
+                        <li>Empire_Common_Laborer_Cheap</li>
+					</value>
+			</li>
+			</operations>
+		</Operation>
+</Patch>
+
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="OutlanderBase">
+    <defName>Farmer</defName>
+    <label>farmer</label>
+    <combatPower>30</combatPower>
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	    <defaultFactionType>OutlanderCivil</defaultFactionType>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>ToolDecent</li>
+    </weaponTags>
+    <weaponMoney>200~250</weaponMoney>
+    <apparelMoney>300~400</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.06</techHediffsChance>
+    <techHediffsMoney>50~600</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~16</initialResistanceRange>
+		    <skills>
+      <li>
+        <skill>Plants</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="OutlanderBase">
+    <defName>Construction_Worker</defName>
+    <label>construction worker</label>
+    <combatPower>30</combatPower>
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+		    <defaultFactionType>OutlanderCivil</defaultFactionType>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>ToolDecent</li>
+    </weaponTags>
+    <weaponMoney>200~250</weaponMoney>
+    <apparelMoney>300~400</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.06</techHediffsChance>
+    <techHediffsMoney>50~600</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~16</initialResistanceRange>
+		    <skills>
+      <li>
+        <skill>Construction</skill>
+        <range>8~16</range>
+      </li>
+      <li>
+        <skill>Mining</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+  
+  
+  
+    <PawnKindDef ParentName="OutlanderBase">
+    <defName>Doctor</defName>
+    <label>doctor</label>
+    <combatPower>100</combatPower>
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Outlander</li>
+		            <li>Nurse</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+		    <defaultFactionType>OutlanderCivil</defaultFactionType>
+	    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <invNutrition>5.0</invNutrition>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>5</countRange>
+        </li>
+      </subOptionsChooseOne>
+	      </inventoryOptions>
+    <itemQuality>Good</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>ToolDecent</li>
+    </weaponTags>
+    <weaponMoney>200~450</weaponMoney>
+	    <apparelRequired>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+	 </apparelRequired>
+    <apparelMoney>400~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.06</techHediffsChance>
+    <techHediffsMoney>100~600</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+	    <apparelColor>(255, 255, 255)</apparelColor>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+	    <skills>
+      <li>
+        <skill>Medicine</skill>
+        <range>10~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+  
+</Defs>
